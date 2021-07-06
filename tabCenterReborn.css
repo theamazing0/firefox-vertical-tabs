@@ -72,6 +72,14 @@
     transition-delay: 200ms;
 }
 
+#newtab {
+    flex-grow: 1;
+    margin-right: 4px;
+    margin-left: 2px;
+    padding-left: 9px;
+}
+
+
 .tab,
 .tab.active {
     max-width: 36px;
