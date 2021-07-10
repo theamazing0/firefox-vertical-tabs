@@ -122,3 +122,26 @@ body:hover .tab {
 body:hover #pinnedtablist:not(.compact) .tab {
     padding-left: 0;
 }
+
+/* Move close button to left side */
+.tab-close {
+    left: 0;
+    margin-left: 3px;
+}
+
+/* Fix title gradient */
+#tablist .tab:hover > .tab-title-wrapper {
+    mask-image: linear-gradient(to left, transparent 0, black 2em);
+}
+
+/* Move tab text to right when hovering to accomodate for the close button */
+#tablist .tab:hover > .tab-title-wrapper {
+    margin-left: 28px;
+    transition: all 0.2s ease;
+}
+
+/* Move favicon to right when hovering to accomodate for the close button */
+#tablist .tab:hover > .tab-meta-image {
+    padding-left: 25px;
+    transition: all 0.2s ease;
+}
