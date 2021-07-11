@@ -140,8 +140,16 @@
 
 #sidebar,
 #sidebar-box:hover {
-    min-width: 220px !important;
-    max-width: 220px !important;
+    min-width: 20vw !important;
+    max-width: 20vw !important;
+}
+
+@media (width >= 1200px) {
+    #sidebar,
+    #sidebar-box:hover {
+          min-width: 10vw !important;
+          max-width: 10vw !important;
+      }
 }
 
 
