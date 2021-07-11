@@ -117,6 +117,9 @@
 }
 
 /* General styles */
+#browser {
+    position: relative;
+}
 #sidebar-box #sidebar-header {
     visibility: collapse;
     display: none;
@@ -124,36 +127,32 @@
 
 #sidebar-box:not([hidden]) {
     display: block;
-    position: fixed;
+    position: absolute;
     min-width: 48px;
     max-width: 48px;
     overflow: hidden;
     transition: all 0.2s ease;
     border-right: 1px solid var(--sidebar-border-color);
     z-index: 1;
+    top: 0;
+    bottom: 0;
 }
 
 #sidebar,
 #sidebar-box:hover {
-    min-width: 20vw !important;
-    max-width: 20vw !important;
+    min-width: 220px !important;
+    max-width: 220px !important;
 }
 
-@media (width >= 1200px) {
-    #sidebar,
-    #sidebar-box:hover {
-          min-width: 10vw !important;
-          max-width: 10vw !important;
-      }
-}
 
 #sidebar-splitter {
     display: none;
 }
 
 #sidebar {
-    height: calc(100vh - 32px);
+    max-height: 100%;
 }
+
 
 #sidebar-box:not([hidden]) ~ #appcontent {
     margin-left: 48px;
