@@ -120,12 +120,12 @@
 #browser {
     position: relative;
 }
-#sidebar-box #sidebar-header {
+#sidebar-box[sidebarcommand*="tabcenter"] #sidebar-header {
     visibility: collapse;
     display: none;
 }
 
-#sidebar-box:not([hidden]) {
+#sidebar-box[sidebarcommand*="tabcenter"]:not([hidden]) {
     display: block;
     position: absolute;
     min-width: 48px;
@@ -138,32 +138,32 @@
     bottom: 0;
 }
 
-#sidebar,
-#sidebar-box:hover {
+[sidebarcommand*="tabcenter"] #sidebar,
+#sidebar-box[sidebarcommand*="tabcenter"]:hover {
     min-width: 20vw !important;
     max-width: 20vw !important;
 }
 
 @media (width >= 1200px) {
-    #sidebar,
-    #sidebar-box:hover {
-          min-width: 10vw !important;
-          max-width: 10vw !important;
-      }
+    [sidebarcommand*="tabcenter"] #sidebar,
+    #sidebar-box[sidebarcommand*="tabcenter"]:hover {
+        min-width: 10vw !important;
+        max-width: 10vw !important;
+    }
 }
 
 
-#sidebar-splitter {
+[sidebarcommand*="tabcenter"] ~ #sidebar-splitter {
     display: none;
 }
 
-#sidebar {
+[sidebarcommand*="tabcenter"] #sidebar {
     max-height: 100%;
     height: 100%;
 }
 
 
-#sidebar-box:not([hidden]) ~ #appcontent {
+#sidebar-box[sidebarcommand*="tabcenter"]:not([hidden]) ~ #appcontent {
     margin-left: 48px;
 }
 
@@ -175,17 +175,17 @@
     height: 100vh;
 }
 
-#sidebar-header {
+[sidebarcommand*="tabcenter"] #sidebar-header {
     background: #0C0C0D;
     border-bottom: none !important;
 }
 
-#sidebar-splitter {
+[sidebarcommand*="tabcenter"] ~ #sidebar-splitter {
     border-right-color: #0C0C0D !important;
     border-left-color: #0C0C0D !important;
 }
 
-#sidebar-switcher-target,
-#sidebar-close {
+[sidebarcommand*="tabcenter"] #sidebar-switcher-target,
+[sidebarcommand*="tabcenter"] #sidebar-close {
     filter: invert(100%);
 }
