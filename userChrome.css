@@ -148,15 +148,15 @@
 
 [sidebarcommand*="tabcenter"] #sidebar,
 #sidebar-box[sidebarcommand*="tabcenter"]:hover {
-    min-width: 20vw !important;
-    max-width: 20vw !important;
+    min-width: 10vw !important;
+    width: 30vw !important;
+    max-width: 200px !important;
 }
 
 @media (width >= 1200px) {
     [sidebarcommand*="tabcenter"] #sidebar,
     #sidebar-box[sidebarcommand*="tabcenter"]:hover {
-        min-width: 10vw !important;
-        max-width: 10vw !important;
+        max-width: 250px !important;
     }
 }
 
