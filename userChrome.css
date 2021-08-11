@@ -53,6 +53,7 @@
       }
 }
 
+
 /* Windows specific styles */
 @media (-moz-os-version: windows-win10) { 
     /* Hide main tabs toolbar */
@@ -105,7 +106,7 @@
           background-color: var(--toolbar-bgcolor,--toolbar-non-lwt-bgcolor);
           background-clip: padding-box;
           border-right: 30px solid transparent;
-          border-image: linear-gradient(to left, transparent, var(--toolbar-bgcolor,--toolbar-non-lwt-bgcolor) 30px) 20 / 30px
+          border-image: linear-gradient(to left, transparent, var(--toolbar-bgcolor,--toolbar-non-lwt-bgcolor) 30px) 20 / 30px;
       }
 
     #toolbar-menubar:not([inactive]) {
@@ -118,11 +119,11 @@
           margin-left: var(--uc-window-drag-space-width,0px);
       }
 
-
     :root[inFullscreen] #nav-bar {
           border-inline: none !important;
       }
 }
+
 
 /* General styles */
 #browser {
@@ -161,7 +162,6 @@
     }
 }
 
-
 [sidebarcommand*="tabcenter"] ~ #sidebar-splitter {
     display: none;
 }
@@ -170,7 +170,6 @@
     max-height: 100%;
     height: 100%;
 }
-
 
 #sidebar-box[sidebarcommand*="tabcenter"]:not([hidden]) ~ #appcontent {
     margin-left: 48px;
