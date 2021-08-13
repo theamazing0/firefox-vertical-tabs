@@ -1,3 +1,11 @@
+* Project has moved
+
+It's new home is at [[https://git.sr.ht/~ranmaru/ff-vertical-tabs]].
+
+v4.0 is the last release here. For future development, please follow the SH repo.
+
+-----
+
 * Firefox Vertical Tabs
 Vertical tabs for Firefox, inspired by Edge.
 
