@@ -157,7 +157,7 @@
     min-width: 10vw !important;
     width: 30vw !important;
     max-width: 200px !important;
-    z-index: 10 !important;
+    z-index: 1 !important;
 }
 
 @media (width >= 1200px) {
